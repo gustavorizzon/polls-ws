@@ -1,0 +1,28 @@
+{
+  "name": "polls-ws",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run services:up && tsx watch src/http/server.ts",
+    "services:up": "docker compose up -d",
+    "services:down": "docker compose down"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "prisma": "^5.9.1",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^9.3.1",
+    "@fastify/websocket": "^8.3.1",
+    "@prisma/client": "^5.9.1",
+    "fastify": "^4.26.1",
+    "ioredis": "^5.3.2",
+    "zod": "^3.22.4"
+  }
+}
